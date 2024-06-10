@@ -22,7 +22,8 @@ function mintNFT (_name,_eyeColor,_shirtType,_bling) {
     "bling": _bling
    }
    NFTs.push(NFT);
-  console.log("Minted: " + _name);
+   console.log("Minted: " + _name);
+ 
 }
 
 // create a "loop" that will go through an "array" of NFT's
@@ -39,11 +40,13 @@ function listNFTs() {
 
 // print the total number of NFTs we have minted to the console
 function getTotalSupply() {
-    return NFTs.length;
+    console.log("\n" + NFTs.length);
   }
 
 // call your functions below this line
-mintNFT("ujjawal", "Blue", "T-Shirt", "Gold Chain");
-mintNFT("sreyash", "Red", "T-Shirt", "silver Chain");
+mintNFT("Ujjawal ", "Blue", "T-Shirt", "Gold Ring");
+mintNFT("Lucky", "white", "T-Shirt", "Silver Chain");
+mintNFT("Paras", "Green", "Polo", "Gold Ring");
+mintNFT("Sahil", "red", "Hoodie", "Gold Bracelet");
 listNFTs();
 getTotalSupply();
