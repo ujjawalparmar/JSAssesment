@@ -14,12 +14,12 @@ const NFTs = []
 // this function will take in some values as parameters, create an
 // NFT object using the parameters passed to it for its metadata, 
 // and store it in the variable above.
-function mintNFT (_name,_eyeColor,_shirtType,_bling) {
+function mintNFT (_name,_branch,_course,_address) {
    const NFT = {
     "name": _name,
-    "eyeColor": _eyeColor,
-    "shirtType": _shirtType,
-    "bling": _bling
+    "branch": _branch,
+    "course": _course,
+    "address": _address
    }
    NFTs.push(NFT);
    console.log("Minted: " + _name);
@@ -32,9 +32,9 @@ function listNFTs() {
     for (let i = 0; i < NFTs.length; i++) {
       console.log("\nID: \t\t" + (i + 1));
       console.log("Name: \t\t" + NFTs[i].name);
-      console.log("Eye Color: \t" + NFTs[i].eyeColor);
-      console.log("Shirt Type: " + NFTs[i].shirtType);
-      console.log("Bling: \t\t" + NFTs[i].bling);
+      console.log("Branch: \t" + NFTs[i].branch);
+      console.log("Course: \t"+ NFTs[i].course);
+      console.log("Address: \t" + NFTs[i].address);
     }
   }
 
@@ -44,9 +44,9 @@ function getTotalSupply() {
   }
 
 // call your functions below this line
-mintNFT("Ujjawal ", "Blue", "T-Shirt", "Gold Ring");
-mintNFT("Lucky", "white", "T-Shirt", "Silver Chain");
-mintNFT("Paras", "Green", "Polo", "Gold Ring");
-mintNFT("Sahil", "red", "Hoodie", "Gold Bracelet");
+mintNFT("Ujjawal ", "IT", "Java", "LDH INDIA");
+mintNFT("Lucky", "CSE", "DSA", "CHD INDIA");
+mintNFT("Paras", "CSE", "DSA", "CHD INDIA");
+mintNFT("Sahil", "IT", "Java", "LDH INDIA");
 listNFTs();
 getTotalSupply();
